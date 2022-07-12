@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 import { useGetCryptosQuery } from "../services/cryptoApi";
 import { Cryptocurrencies, News } from "../components";
+import Loader from "../components/Loader";
 
 const { Title } = Typography; // destructuring from Typography.Title
 
@@ -12,7 +13,7 @@ const Homepage = () => {
   const { data, isFetching } = useGetCryptosQuery(10);
   const globalStats = data?.data?.stats; // ? will allow us to get the data only when data is loaded!!
 
-  if (isFetching) return "Loading...";
+  if (isFetching) return <Loader />;
 
   return (
     <>
