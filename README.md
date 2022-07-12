@@ -9,3 +9,5 @@ react-chartjs-2 to render the chart from chart.js
 html-react-parser to parse html data
 millify to transform large numbers to readable strings
 moment to parse time and dates
+
+## Exchange page is not done because of the paid API
