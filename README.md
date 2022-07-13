@@ -11,4 +11,6 @@ millify to transform large numbers to readable strings
 moment to parse time and dates
 
 ## Note
-Exchange page is not done because of the paid API
+
+- Exchange page is not done because of the paid API
+- This project uses redux toolkit to fetch API data (RTK query) instead of Axios
